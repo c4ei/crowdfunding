@@ -2,12 +2,13 @@
 module.exports = {
   solidity: {
     version: '0.8.9',
-    defaultNetwork: 'goerli',
+    defaultNetwork: 'c4ei',
     networks: {
       hardhat: {},
-      goerli: {
-        url: 'https://rpc.ankr.com/eth_goerli',
+      c4ei: {
+        url: 'http://192.168.1.186:21004',
         accounts: [`0x${process.env.PRIVATE_KEY}`]
+        ,network_id: "21004"
       }
     },
     settings: {
